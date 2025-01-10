@@ -5,5 +5,5 @@ from . import app, db
 from .models import User, Goal
 
 @app.route('/')
-def index():
-    return 'Welcome to the Goal Tracker!!'
+def home():
+    return render_template('home.html')

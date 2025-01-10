@@ -1,16 +1,4 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import create_engine
 
-db = SQLAlchemy()
-
-def create_app():
-    app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://master:Sucesso_24@localhost/goal_tracker'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    db.init_app(app)
-
-    with app.app_context():
-        from . import routes, models
-        db.create_all()
-
-    return app 
+engine = create_engine('mysql+pymysql://master:Sucesso_24@localhost:3306/goal_tracker')
