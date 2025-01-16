@@ -1,5 +1,5 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, 
-from database import Base
+from sqlalchemy import Column, Integer, String, ForeignKey
+from database import Base, engine
 
 class User(Base):
     __tablename__ = 'users'
@@ -8,6 +8,9 @@ class User(Base):
     password = Column(String(120), nullable=False)
 
 
-def __init__(self, username, password):
-    self.username = username
-    self.password = password
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+
+Base.metadata.create_all(bind=engine)
