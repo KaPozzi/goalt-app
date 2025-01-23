@@ -22,8 +22,11 @@
         <div class="navbar-nav">
           <a class="nav-link" href="/">Home</a>
           <a class="nav-link" href="/register">Register</a>
+          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/goals">Goals</a>
         </div>
       </div>
+      <img src="{{ url_for('static', filename='profile.png') }}" alt="" class="img-fluid" style="width: fit-content;">
     </div>
   </nav>
     {% block content %}{% endblock %}
