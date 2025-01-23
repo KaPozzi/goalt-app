@@ -8,12 +8,14 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'goal_tracker = goalt_app.run:main'
+            'goal_tracker = goalt_app.run:main',
+            'run_gun = goalt_app.run_gunny:run_gunny'
         ]
     },
     install_requires=[
         'flask',
         'flask-sqlalchemy',
-        'sqlalchemy'
+        'sqlalchemy',
+        'gunicorn'
     ]
 )
