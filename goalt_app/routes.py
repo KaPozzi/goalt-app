@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, Blueprint, flash
+from flask import render_template, request, redirect, url_for, Blueprint, flash, session
 from .database import create_user, create_goal, get_user
 from .database import get_users
 
@@ -25,3 +25,16 @@ def register_user():
     else:
         print(users)
         return render_template('register.html', users=users)
+    
+@routes.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        user = get_user(username, password)
+        if user:
+            return redirect(url_for('routes.dashboard'))
+        else:
+            flash('Invalid credentials')
+            return redirect(url_for('routes.login'))
+    return render_template('login.html')
