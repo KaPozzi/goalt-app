@@ -8,7 +8,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'goal_tracker = goalt_app.run:main',
+            'dev = goalt_app.run:main',
             'run_gun = goalt_app.run_gunny:run_gunny'
         ]
     },
