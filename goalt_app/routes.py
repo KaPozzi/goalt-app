@@ -6,6 +6,8 @@ from .database import get_users
 
 from .models import User, Goal
 
+## This file is destinated to set each page and it's backend logic ##
+
 routes = Blueprint('routes', __name__)
 
 @routes.route('/')

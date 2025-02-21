@@ -2,6 +2,7 @@ import sqlalchemy
 from sqlalchemy import Column, Integer, String, Text, ForeignKey
 from sqlalchemy.orm import declarative_base
 
+## Set tables in database, flask will look for it by default. ##
 
 Base = declarative_base()
 
