@@ -5,6 +5,7 @@ from flask import current_app
 from . import db
 
 
+## Create the engine, which connects with database and create sessions in it##
 
 def create_session():
     engine = create_engine(current_app.config['SQLALCHEMY_DATABASE_URI'])
@@ -37,3 +38,4 @@ def get_users():
     users = session.query(User).all()
     session.close()
     return users
+

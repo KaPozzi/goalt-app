@@ -3,7 +3,7 @@ Main Objective = Create a Goal Track Application using Python, Flask, SQL Alchem
 For this i'll need to create:
 - A Database
 
-
+Pozzi Notes:
 
 
 Steve Notes:

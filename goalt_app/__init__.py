@@ -2,12 +2,13 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import secrets
 
+## This file is destinated to configuration base stuff, like this one is the configuration to connect to database. 
 
 db = SQLAlchemy()
 
 def create_app():
-    app = Flask(__name__)
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://master:Sucesso_24@localhost/goal_tracker'
+
+    app = Flask(__name__)    # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://master:Sucesso_24@localhost/goal_tracker'
     app.secret_key = 'b20a61da639d856a1ba0079df2b26c87'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
