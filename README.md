@@ -6,22 +6,22 @@ This application is part of my portfolio, feel free to leave a feedback
 
 ### Fetures
 
-Goal Tracking System 
-Progress Visualization
-Reminders & Notifications
-Milestone management
-Cloud-based synchronization
+- Goal Tracking System 
+- Progress Visualization
+- Reminders & Notifications
+- Milestone management
+- Cloud-based synchronization
 
 ## Getting Started
 
 ### Prerequisites
 
-Create a Virtual Environment
-Install:
-    Flask
-    Python3
-    pip
-    SQLAlchemy
+- Create a Virtual Environment
+- Install:
+    - Flask
+    - Python3
+    - pip
+    - SQLAlchemy
 
 ## Deployment
 
@@ -41,6 +41,6 @@ Install:
 
 ## Contact
 
-Email: kapozzi@gmail.com
-GitHub: KaPozzi
-LinkedIn: https://www.linkedin.com/in/kauapozzi/
+- Email: kapozzi@gmail.com
+- GitHub: KaPozzi
+- LinkedIn: https://www.linkedin.com/in/kauapozzi/
