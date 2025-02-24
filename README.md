@@ -2,7 +2,7 @@
 
 ## About this project
 
-This application is part of my portfolio, feel free to leave a feedback
+This application is part of my portfolio, i'm doing this in a collab with my friend @syuhas! Please feel free to leave a feedback.
 
 ### Fetures
 
