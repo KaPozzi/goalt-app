@@ -40,3 +40,7 @@ def login():
             flash('Invalid credentials')
             return redirect(url_for('routes.login'))
     return render_template('login.html')
+
+@routes.route('/goals')
+def goals_page():
+    return render_template('goals.html')
